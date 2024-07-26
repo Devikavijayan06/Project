@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
@@ -14,13 +16,13 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="lifestyle.html">Lifestyle</a></li>
-                    <li><a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a></li>
+                    <li><a href="index.html" class="logo-link"><img src="images/logo.png" alt="Logo" class="logo"></a>
                     <li><a href="nutrition.html">Nutrition</a></li>
                 </ul>
                 <div class="search-join">
                     <input type="text" placeholder="Search">
                     <button>Search</button>
-                    <button class="join-btn">Join for Free</button>
+                    <a href="join.html"><button class="join-btn">Join for Free</button></a>
                 </div>
             </nav>
         </header>
@@ -29,19 +31,69 @@
                 <h1>About Us</h1>
                 <p>We are dedicated to providing the best health and wellness information.</p>
                 <img src="images/about_us.jpg" alt="About Us" class="responsive-img">
+                <div class="additional-content">
+
+                    <article>
+                        <div class="row dis_flex">
+                            <div class="column">
+                                <img src="images/mission.jpeg" alt="Our Mission">
+                                <h3>Our Mission </h3>
+                                <p>Our mission is to empower individuals to lead healthier, more fulfilling lives by
+                                    offering reliable, evidence-based information and practical resources on health and
+                                    wellness. We strive to inspire positive lifestyle changes through educational
+                                    content, personalized guidance, and community support, fostering a holistic approach
+                                    to well-being that addresses physical, mental, and emotional health.</p>
+                            </div>
+                            <div class="column">
+                                <img src="images/author.jpeg" alt="About Author">
+                                <h3>About the Author</h3>
+                                <p>Hi there! I'm Devika Vijayan, a web development student with a passion for creating
+                                    engaging and functional digital experiences. As someone who is deeply interested in the ever-evolving world of web
+                                    technologies, I am dedicated to learning and applying the latest practices in web design and
+                                    development. My journey involves exploring various aspects of web development, from front-end design to
+                                    back-end functionality, with the goal of building user-friendly and impactful websites.
+                                    Through this platform, I aim to share my knowledge and insights while continuously growing in
+                                    this dynamic field.
+                                </p>
+
+                            </div>
+                            <div class="column">
+                                <img src="images/HL.jpeg" alt="Healthy Lifestyle">
+                                <h3>Promoting a Healthy Lifestyle</h3>
+                                <p>We believe that adopting a healthy lifestyle is the key to overall well-being. Our
+                                    goal is to inspire
+                                    and motivate you to make positive changes in your daily routine. Whether it's
+                                    through balanced
+                                    nutrition, regular exercise, or mental wellness practices, we are here to support
+                                    you every step of
+                                    the way. Join us on this journey towards a healthier and happier life.</p>
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
             </section>
         </main>
     </div>
     <footer>
+
         <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms</a></li>
         </ul>
-        <div class="subscribe">
-            <input type="email" placeholder="Email address">
-            <button>Join</button>
+        <div class="card">
+            <span class="card__title">Subscribe</span>
+            <p class="card__content">Sign up for our newsletter and you'll be the first to find out about new features.
+            </p>
+            <div class="card__form">
+                <input placeholder="Your Email" type="text">
+                <button class="sign-up"> Sign up</button>
+            </div>
         </div>
+
         <div class="social">
             <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
             <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
@@ -50,4 +102,5 @@
         </div>
     </footer>
 </body>
+
 </html>

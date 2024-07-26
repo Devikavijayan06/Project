@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
@@ -14,47 +16,62 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="lifestyle.html">Lifestyle</a></li>
-                    <li><a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a></li>
+                    <li><a href="index.html" class="logo-link"><img src="images/logo.png" alt="Logo" class="logo"></a>
+                    </li>
                     <li><a href="nutrition.html">Nutrition</a></li>
                 </ul>
                 <div class="search-join">
                     <input type="text" placeholder="Search">
                     <button>Search</button>
-                    <button class="join-btn">Join for Free</button>
+                    <a href="join.html"><button class="join-btn">Join for Free</button></a>
                 </div>
             </nav>
         </header>
         <main>
             <section class="content">
                 <div class="carousel">
-                    <button class="carousel-btn left">&lt;</button>
+                    <button class="carousel-btn left"><img src="images/left-arrow.png" alt="Left Arrow"></button>
                     <div class="carousel-item">
-                        <img src="images/fitness.jpg" alt="Fitness">
-                        <p>Fitness</p>
+                        <a href="fitness.html">
+                            <img src="images/fitness.jpg" alt="Fitness">
+                            <button class="carousel-btn-text">Fitness</button>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/mental_health.jpg" alt="Mental Health">
-                        <p>Mental Health</p>
+                        <a href="mental_health.html">
+                            <img src="images/mental_health.jpg" alt="Mental Health">
+                            <button class="carousel-btn-text">Mental Health</button>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/healthy_recipes.jpg" alt="Healthy Recipes">
-                        <p>Healthy Recipes</p>
+                        <a href="healthy_recipes.html">
+                            <img src="images/healthy_recipes.jpg" alt="Healthy Recipes">
+                            <button class="carousel-btn-text">Healthy Recipes</button>
+                        </a>
                     </div>
-                    <button class="carousel-btn right">&gt;</button>
+                    <button class="carousel-btn right"><img src="images/right-arrow.png" alt="Right Arrow"></button>
                 </div>
             </section>
         </main>
     </div>
+
     <footer>
+
         <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms</a></li>
         </ul>
-        <div class="subscribe">
-            <input type="email" placeholder="Email address">
-            <button>Join</button>
+        <div class="card">
+            <span class="card__title">Subscribe</span>
+            <p class="card__content">Sign up for our newsletter and you'll be the first to find out about new features.
+            </p>
+            <div class="card__form">
+                <input placeholder="Your Email" type="text">
+                <button class="sign-up"> Sign up</button>
+            </div>
         </div>
+
         <div class="social">
             <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
             <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
@@ -63,4 +80,5 @@
         </div>
     </footer>
 </body>
+
 </html>
