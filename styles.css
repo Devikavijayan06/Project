@@ -1,4 +1,3 @@
-/* Base styles */
 html,
 body {
     height: 100%;
@@ -61,6 +60,7 @@ nav ul li a:hover {
     background: lightgray;
     border-radius: 20px;
 }
+
 nav ul li a.logo-link:hover {
     background: none;
     color: inherit;
@@ -72,9 +72,11 @@ nav .logo {
     height: 80px;
     margin: 1rem 0;
 }
-p{
-    line-height:1.5;
+
+p {
+    line-height: 1.5;
 }
+
 ul {
     list-style: none;
     text-align: justify;
@@ -124,8 +126,9 @@ ul li {
     height: auto;
     margin: 1rem 0;
 }
-.content img:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+.content img:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
 
@@ -141,7 +144,7 @@ ul li {
     text-align: center;
     margin: 0 1rem;
     flex: 1;
-} 
+}
 
 .carousel-item img {
     max-width: 100%;
@@ -157,7 +160,8 @@ ul li {
     font-size: 2rem;
     cursor: pointer;
 }
-.carousel-btn img{
+
+.carousel-btn img {
     width: 50px;
     height: 30px;
 }
@@ -231,17 +235,19 @@ footer .social img {
 .join-page {
     background: url('images/background_image.jpeg') no-repeat center center fixed;
     background-size: cover;
-    padding: 2rem 0; /* Add some padding around the section */
+    padding: 2rem 0;
 }
 
 .join-section {
     max-width: 500px;
-    margin: 5% auto; /* Center the section with some top margin */
+    margin: 5% auto;
+    /* Center the section with some top margin */
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* White background with transparency */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333; /* Dark text color for readability */
+    color: #333;
 }
 
 .join-section h1 {
@@ -272,17 +278,28 @@ footer .social img {
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
-animation-name: example;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  border-radius:20px;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
 }
 
 @keyframes example {
-  0%   {background-color: palevioletred;}
-  25%  {background-color: darkseagreen;}
-  50%  {background-color: rosybrown;}
-  100% {background-color: plum;}
+    0% {
+        background-color: palevioletred;
+    }
+
+    25% {
+        background-color: darkseagreen;
+    }
+
+    50% {
+        background-color: rosybrown;
+    }
+
+    100% {
+        background-color: plum;
+    }
 }
 
 .join-section .join-submit-btn:hover {
@@ -290,7 +307,7 @@ animation-name: example;
     color: #333;
 }
 
-/* Content sections visibility */
+
 .content-section {
     display: none;
 }
@@ -299,24 +316,27 @@ animation-name: example;
     display: block;
 }
 
-/* Optional: Style the toggle links */
+
 .toggle-heading {
     cursor: pointer;
-    color: #007bff; /* Change to your preferred color */
+    color: #007bff;
 }
 
 .toggle-heading:hover {
     text-decoration: underline;
 }
-/* STYLE FOR MENTAL HEALTH PAGE */
-/* Additional content section styles */
-.articles, .techniques {
+
+/* MENTAL HEALTH PAGE */
+
+.articles,
+.techniques {
     padding: 2rem;
     background-color: #f5f5f5;
     margin: 2rem 0;
 }
 
-.articles h2, .techniques h2 {
+.articles h2,
+.techniques h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -335,15 +355,18 @@ article p {
     line-height: 1.5;
     text-align: justify;
 }
-/* STYLE FOR HEALTHY RECIPES PAGE */
-/* Additional content section styles */
-.recipes, .budget-tips {
+
+/* HEALTHY RECIPES PAGE */
+
+.recipes,
+.budget-tips {
     padding: 2rem;
     background-color: #f5f5f5;
     margin: 2rem 0;
 }
 
-.recipes h2, .budget-tips h2 {
+.recipes h2,
+.budget-tips h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -367,6 +390,7 @@ article ol {
     margin: 0;
     padding-left: 1.5rem;
 }
+
 .carousel-btn-text {
     width: 9em;
     height: 3em;
@@ -377,7 +401,7 @@ article ol {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background-color: transparent; /* Make sure the initial background is transparent */
+    background-color: transparent;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -395,41 +419,43 @@ article ol {
     display: block;
     z-index: -1;
 }
-.carousel-btn-text:hover{
-    
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      
+
+.carousel-btn-text:hover {
+
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .carousel-btn-text:hover::before {
     width: 9em;
- 
+
 }
+
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 33.33%;
     padding: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row::after {
+}
+
+/* Clear floats after the columns */
+.row::after {
     content: "";
     display: table;
     clear: both;
-  }
-  .dis_flex{
+}
+
+.dis_flex {
     display: flex;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:600px) {
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
     .column {
-      width: 100%;
+        width: 100%;
     }
 }
 
-/* Card styles moved to the top */
 .card {
     width: 535px;
     height: 180px;
@@ -444,7 +470,7 @@ article ol {
     border-radius: 20px;
 }
 
-.card > * {
+.card>* {
     margin: 0;
 }
 
@@ -489,6 +515,7 @@ article ol {
 .sign-up:hover {
     opacity: 0.8;
 }
+
 .form-container {
     width: auto;
     background-image: linear-gradient(to right, powderblue 0%, pink 100%);
@@ -502,33 +529,33 @@ article ol {
     gap: 20px;
     box-sizing: border-box;
     border-radius: 16px;
-  }
-  
-  .form-container button:active {
+}
+
+.form-container button:active {
     scale: 0.95;
-  }
-  
-  .form-container .form {
+}
+
+.form-container .form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .form-container .form-group {
+}
+
+.form-container .form-group {
     display: flex;
     flex-direction: column;
     gap: 2px;
-  }
-  
-  .form-container .form-group label {
+}
+
+.form-container .form-group label {
     display: block;
     margin-bottom: 5px;
     color: #000000;
     font-weight: 600;
     font-size: 12px;
-  }
-  
-  .form-container .form-group input {
+}
+
+.form-container .form-group input {
     width: 97%;
     padding: 12px 16px;
     border-radius: 8px;
@@ -536,9 +563,9 @@ article ol {
     font-family: inherit;
     background-color: transparent;
     border: 1px solid #414141;
-  }
-  
-  .form-container .form-group textarea {
+}
+
+.form-container .form-group textarea {
     width: 97%;
     padding: 12px 16px;
     border-radius: 8px;
@@ -548,27 +575,27 @@ article ol {
     border: 1px solid #414141;
     background-color: transparent;
     font-family: inherit;
-  }
-  
-  .form-container .form-group input::placeholder {
+}
+
+.form-container .form-group input::placeholder {
     opacity: 0.5;
-  }
-  
-  .form-container .form-group input:focus {
+}
+
+.form-container .form-group input:focus {
     outline: none;
     border-color: #e81cff;
-  }
-  
-  .form-container .form-group textarea:focus {
+}
+
+.form-container .form-group textarea:focus {
     outline: none;
     border-color: #e81cff;
-  }
-  
-  .form-container .form-submit-btn {
+}
+
+.form-container .form-submit-btn {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    align-self:center;
+    align-self: center;
     font-family: inherit;
     color: #ffffff;
     font-weight: 600;
@@ -581,39 +608,40 @@ article ol {
     margin-top: 8px;
     cursor: pointer;
     border-radius: 6px;
-  }
-  
-  .form-container .form-submit-btn:hover {
+}
+
+.form-container .form-submit-btn:hover {
     background-color: gray;
     border-color: gray;
     color: #000000;
-  }
-  
-.content-flex {
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: space-between; /* Space out text and video */
-    align-items: center; /* Vertically center-align */
-    flex-wrap: wrap; /* Wrap if necessary */
 }
 
-.text-content, .video-content {
-    flex: 1; /* Allow items to grow equally */
-    margin: 10px; /* Add some margin around items */
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-content,
+.video-content {
+    flex: 1;
+    margin: 10px;
 }
 
 .video-content {
-    text-align: center; /* Center-align video */
+    text-align: center;
 }
 
-/* Optional: For responsiveness */
 @media (max-width: 768px) {
     .content-flex {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center-align items */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .text-content, .video-content {
-        margin: 0; /* Remove margin on smaller screens */
+    .text-content,
+    .video-content {
+        margin: 0;
     }
 }
 
@@ -632,4 +660,44 @@ article ol {
 .video p {
     text-align: center;
     margin-top: 8px;
+}
+
+.recipe-article {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.recipe-text {
+    flex: 2;
+    margin-right: 1rem;
+    line-height: 1.6;
+}
+
+.recipe-image {
+    flex: 1;
+}
+
+.recipe-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-image1 {
+    flex: 1;
+}
+
+.recipe-image1 img {
+    max-width: 75%;
+    height: auto;
+}
+
+.recipe-image2 {
+    flex: 1;
+}
+
+.recipe-image2 img {
+    max-width: 80%;
+    height: auto;
 }
